@@ -126,14 +126,17 @@ bck.onclick = () => {
   };
 
   carButtons.addEventListener('click', (e) => {
-    let temp = e.target.classList[0].split('c')[1];
-    console.log(temp);
+    
+    if (e.target.classList.value == 'carouselButtons') {
+      return;
+    } else {
 
     if (e.target.classList[1] === 'filled') {
       alert('already filled');
       return;
     } else {
-
+      let temp = e.target.classList[0].split('c')[1];
+    console.log(temp);
       for (let x = 0; x < 5; x++) {
         whatever(x);
         image1.classList.remove('test');
@@ -150,6 +153,7 @@ bck.onclick = () => {
       console.log(i);
       return i;
     } 
+  }
   })
 
  
