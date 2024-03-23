@@ -1,0 +1,93 @@
+ul {
+    opacity: 1;
+    display:flex;
+    flex-direction: column;
+    list-style: none;
+    
+}
+.navbar {
+   
+}
+.content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 15fr;
+}
+.navItems {
+    padding:0;
+}
+
+.navbar {
+    display:flex;
+    flex-direction: column;
+    align-content: stretch;
+}
+
+.show {
+    transition: transform 300ms ease-in-out, opacity 500ms ease-in-out, max-height 500ms ease-in;
+    opacity: 1;
+    transform:translateY(0px) scaleY(1);
+    
+}
+
+.hide {
+    transform:translateY(-50px) scaleY(0);
+    transition: opacity 500ms ease-in-out, transform 300ms ease-in-out, max-height 300ms ease-in-out;
+    opacity: 1; 
+}
+
+.navItems li {
+  
+    border: 1px solid black;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+    flex-direction: column;
+}
+.carouselMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+}
+
+.carousel>div>img{
+    aspect-ratio:inherit;
+    width: 450px;
+    overflow: hide;
+    
+}
+.fwd, .bck {
+    height:25px;
+}
+[class*="image"] {
+    opacity: 0;
+}
+.test{
+    transition: opacity 300ms ease-in-out;
+    opacity: 1;
+}
+
+.carouselButtons{
+    display: flex;
+    gap: 2rem;
+}
+
+[class*='pic'] {
+    width: 25px;
+    height: 25px;
+    border-radius: 360px;
+    border: 1px solid blue;
+}
+
+[class*='pic'].filled {
+    background-color: blue;
+}

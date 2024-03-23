@@ -5,8 +5,10 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "webpack",
     "build": "webpack",
-    "start": "webpack serve --open"
+    "start": "webpack serve --open",
+    "watch": "webpack --watch"
   },
   "author": "",
   "license": "ISC",

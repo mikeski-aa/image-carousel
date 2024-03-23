@@ -11,7 +11,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.html",
-      title: "templateRepo",
+      title: "Image Carousel",
     }),
   ],
   module: {
